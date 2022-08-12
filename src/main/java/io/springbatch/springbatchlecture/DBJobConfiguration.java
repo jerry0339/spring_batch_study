@@ -15,15 +15,15 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @RequiredArgsConstructor
 public class DBJobConfiguration {
-    
     private final JobBuilderFactory jobBuilderFactory; // Note : Job을 생성하는 빌드 펙토리
     private final StepBuilderFactory stepBuilderFactory; // Note : step을 생성하는 빌드 펙토리
 
-    // Note : Job 구동 -> Step 실행 -> Tasklet(step안에서 이루어 지는 단일 테스크) 실행
+    // Note : 배치 기본 흐름
+    //   Job 구동 -> Step 실행 -> Tasklet(step안에서 이루어 지는 단일 테스크) 실행
 
     @Bean
     public Job helloJob() {
-        return this.jobBuilderFactory.get("Job")// Note : 'Job' 이름으로 Job 생성
+        return this.jobBuilderFactory.get("Job") // Note : 'Job' 이름으로 Job 생성
                 .start(step1())
                 .next(step2())
                 .next(step3())
