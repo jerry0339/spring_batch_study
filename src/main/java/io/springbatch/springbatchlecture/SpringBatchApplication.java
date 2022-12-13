@@ -12,8 +12,4 @@ public class SpringBatchApplication {
         SpringApplication.run(SpringBatchApplication.class, args);
     }
 
-    // git test4
-    // git test5
-    // git test6
-    // git test7
 }

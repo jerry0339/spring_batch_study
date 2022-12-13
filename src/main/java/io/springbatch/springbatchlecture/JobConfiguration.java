@@ -49,7 +49,4 @@ public class JobConfiguration {
                 .build();
     }
 
-    // git test1
-    // git test2
-    // git test3
 }
