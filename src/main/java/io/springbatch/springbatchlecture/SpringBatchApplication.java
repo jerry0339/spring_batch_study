@@ -12,4 +12,5 @@ public class SpringBatchApplication {
         SpringApplication.run(SpringBatchApplication.class, args);
     }
 
+    // git test4
 }
