@@ -4,5 +4,6 @@ import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 public class FeatureTtt2Test {
-	// Reset
+	// ttt2 test1
+	// ttt2 test2
 }
