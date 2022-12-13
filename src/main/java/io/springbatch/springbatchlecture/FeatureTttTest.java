@@ -9,4 +9,5 @@ public class FeatureTttTest {
 	// test3
 
 	// test1 after squash
+	// test2 after squash and ttt2Test
 }
